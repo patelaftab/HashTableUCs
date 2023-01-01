@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HashTableUCs
 {
-    public class MyMapNode<K,V>
+    public class MyMapNode<K, V>
     {
         public struct KeyValue<k, v>
         {
@@ -118,6 +118,5 @@ namespace HashTableUCs
                     }
             }
         }
-
     }
 }

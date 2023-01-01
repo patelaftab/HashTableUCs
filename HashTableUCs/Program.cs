@@ -6,13 +6,25 @@
         {
             Console.WriteLine("Welcome To HashTable Program");
             Console.WriteLine("Choose a Number From Below\n" +
-                "1: Checking a Frequency For Single Line Statement (UC1)\n");
+                "1: Checking a Frequency For Single Line Statement (UC1)\n" +
+                "2: Checking a Frequency For Paragraph Statement (UC2)\n");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
                 case 1:
                     string paragraph = "To be or not to be";//UC1 (Counting frequency of occurrence of words in a sentence .
                     CountNumbOfOccurence(paragraph);
+                    break;
+                case 2:
+                    string paragraph1 = "Paranoids are not paranoid " +
+                        "because they are paranoid but " +
+                        "because they keep putting themselves " +
+                        "deliberately into paranoid avoidable " +
+                        "situations";
+                    CountNumbOfOccurence(paragraph1);
+                    break;
+                default:
+                    Console.WriteLine("Invalid option selected ! Please try again .");
                     break;
 
             }
